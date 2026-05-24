@@ -23,7 +23,7 @@ pip install -r requirements.txt
 python predict.py --mode predict_dir --inp_dir /path/to/wav/dir/ --bs <batchsize> --out_path /path/to/csv/file.csv
 ------------------------------------------------------------------------------------------------------------------
 https://github.com/tiantiaf0627/vox-profile-release
-
+'''
 # Load libraries
 >import torch
 import torch.nn.functional as F
@@ -54,6 +54,7 @@ whisper_logits, whisper_embeddings = whisper_model(data, return_feature=True)
 # Probability and output
 whisper_prob = F.softmax(whisper_logits, dim=1)
 print(english_accent_list[torch.argmax(whisper_prob).detach().cpu().item()])
+'''
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 
