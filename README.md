@@ -13,14 +13,14 @@ Link is provided here-https://huggingface.co/OpenMOSS-Team/SpeechGPT-2.0-preview
 #Code is available here-https://github.com/0nutation/SpeechGPT/tree/main/speechgpt#finetune-speechgpt
 
 ----------------------------------------------------------------------------------------------------------------
-MOS Calculation
-https://github.com/sarulab-speech/UTMOS22
+>MOS Calculation
+>https://github.com/sarulab-speech/UTMOS22
 
-git clone https://huggingface.co/spaces/sarulab-speech/UTMOS-demo
-cd UTMOS-demo
-pip install -r requirements.txt
+>git clone https://huggingface.co/spaces/sarulab-speech/UTMOS-demo
+>cd UTMOS-demo
+>pip install -r requirements.txt
 
-python predict.py --mode predict_dir --inp_dir /path/to/wav/dir/ --bs <batchsize> --out_path /path/to/csv/file.csv
+>python predict.py --mode predict_dir --inp_dir /path/to/wav/dir/ --bs <batchsize> --out_path /path/to/csv/file.csv
 ------------------------------------------------------------------------------------------------------------------
 https://github.com/tiantiaf0627/vox-profile-release
 '''
