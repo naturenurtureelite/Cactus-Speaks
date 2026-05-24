@@ -25,7 +25,7 @@ python predict.py --mode predict_dir --inp_dir /path/to/wav/dir/ --bs <batchsize
 https://github.com/tiantiaf0627/vox-profile-release
 
 # Load libraries
-import torch
+>import torch
 import torch.nn.functional as F
 from src.model.accent.whisper_accent import WhisperWrapper
 
