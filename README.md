@@ -47,14 +47,19 @@ whisper_model.eval()
 # Load data, here just zeros as the example
 # Our training data filters output audio shorter than 3 seconds (unreliable predictions) and longer than 15 seconds (computation limitation)
 # So you need to prepare your audio to a maximum of 15 seconds, 16kHz and mono channel
+
 max_audio_length = 15 * 16000
+
 data = torch.zeros([1, 16000]).float().to(device)[:, :max_audio_length]
+
 whisper_logits, whisper_embeddings = whisper_model(data, return_feature=True)
     
 # Probability and output
+
 whisper_prob = F.softmax(whisper_logits, dim=1)
+
 print(english_accent_list[torch.argmax(whisper_prob).detach().cpu().item()])
-'''
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 
