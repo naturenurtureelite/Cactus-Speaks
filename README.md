@@ -10,7 +10,7 @@ Step3: Modify the METAROOT, DATAROOT, and OUTROOT parameters in the scripts/cm_s
 
 Link is provided here-https://huggingface.co/OpenMOSS-Team/SpeechGPT-2.0-preview-7B/blob/main/README.md
 
-Code is available here-https://github.com/0nutation/SpeechGPT/tree/main/speechgpt#finetune-speechgpt
+#Code is available here-https://github.com/0nutation/SpeechGPT/tree/main/speechgpt#finetune-speechgpt
 
 ----------------------------------------------------------------------------------------------------------------
 MOS Calculation
