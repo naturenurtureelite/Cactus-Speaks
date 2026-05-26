@@ -63,5 +63,5 @@ Probability and output
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
-
+For Generating dataset 3, first we run preprocessing.py to preproces the available data, then we run the encoder to generate the speaker embeddings, which is passed through decoder to generate mel spectograms,
 
