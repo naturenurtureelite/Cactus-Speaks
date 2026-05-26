@@ -65,4 +65,5 @@ Probability and output
 
 For Generating dataset 3, first we run preprocessing.py to preproces the available data, then we run the encoder to generate the speaker embeddings, which is passed through decoder to generate mel spectograms, which is then passed through Waveglow-https://github.com/NVIDIA/waveglow to generate the audio files.
 
-For Generating dataset 3, 
+For Generating dataset 3, first we run preprocessing.py to preproces the available data, then we run first we run paranet.py to preproces the available mel spectograms. Then we pass the mel spectograms through the Waveglow network--https://github.com/NVIDIA/waveglow to generate the audio files.
+For aligning the spectograms with the text we use align.py
